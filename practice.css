@@ -1,0 +1,196 @@
+/* .container
+{
+    justify-content: center;
+     margin: auto; 
+    background-color: brown;
+    position:relative;
+    top: 250px;
+
+}
+ */
+
+.one
+{
+    height: 200px;
+    width: 200px;
+    color: white;
+    background-color: red;
+    /* justify-content: center; 
+    margin: auto;
+    position: absolute; 
+    top: 10%;
+    left: 5%; */
+    animation-name:rangeela;
+    animation-duration: 5s;
+    animation-iteration-count: 4;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    /* margin: auto; */
+    /* animation-direction: reverse,normal,alternate,alternate-reverse; */
+    animation-direction: normal;
+}
+
+.one:hover{
+    animation-play-state: paused;
+}
+
+@keyframes rangeela {
+    0%{
+        background-color: green;
+        transform: rotate(0deg) scale(1,1) translate(0px,0px) ;    
+
+    }  
+
+    50%{
+        background-color: blue;
+
+        transform: rotate(180deg)  scale(1,1) translate(50px,50px) ;    
+
+        /* translate(0px,100px) */
+        /* transform: scale(1.5,1.5); 
+         transform: rotate(180deg);*/
+    }
+
+    100%{
+
+        background-color: purple;
+        transform: rotate(360deg) scale(1,1) translate(100px,100px);    
+        
+        /* transform: rotate(360deg); */
+
+
+    }
+}
+
+.circle
+{
+    width: 200px;
+    background-color: green;
+    height: 200px;
+    border-radius: 100px;
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+
+}
+
+.circle1
+{
+    width: 200px;
+    background-color: purple;
+    height: 200px;
+    border-radius: 100px;
+    animation-name: ball1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+.circle2
+{
+    width: 200px;
+    background-color: skyblue;
+    height: 200px;
+    border-radius: 100px;
+    animation-name: ball2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    /* animation-play-state: paused; */
+
+}
+.circle3
+{
+    width: 200px;
+    background-color: pink;
+    height: 200px;
+    border-radius: 100px;
+    animation-name: ball3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+    /* animation-play-state: paused; */
+}
+
+@keyframes ball{
+    
+    100%,0%{
+        background-color: red;
+        transform:  translate(650px,0px) ;    
+
+    }  
+
+    50%{
+        
+        background-color: palevioletred;
+        transform:  translate(650px,150px)     
+
+        /* translate(0px,100px) */
+        /* transform: scale(1.5,1.5); 
+         transform: rotate(180deg);*/
+    }
+
+}
+
+@keyframes ball1{
+    
+    100%,0%{
+        background-color: lavender;
+        transform:  translate(650px,300px);    
+
+    }  
+
+
+    50%{
+
+        background-color: purple;
+        transform: translate(650px,150px);    
+        /* transform: rotate(360deg); */
+
+    }
+}
+
+@keyframes ball2{
+    
+    100%,0%{
+        background-color: orange;
+        transform:  translate(0px,-140px);    
+
+    }  
+
+    50%{
+        
+        background-color: burlywood;
+        transform:  translate(500px,-140px);    
+
+        /* translate(0px,100px) */
+        /* transform: scale(1.5,1.5); 
+         transform: rotate(180deg);*/
+   
+        }
+}
+
+@keyframes ball3{
+    
+    100%,0%{
+        background-color: brown;
+        transform:  translate(1300px,-350px) ;    
+
+    }  
+
+    50%{
+        
+        background-color: palegoldenrod;
+        transform:  translate(800px,-350px) ;    
+
+        /* translate(0px,100px) */
+        /* transform: scale(1.5,1.5); 
+         transform: rotate(180deg);*/
+    }
+
+
+}
